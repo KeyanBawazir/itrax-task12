@@ -1,0 +1,47 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* general styling */
+.term-img-effect {
+    position: relative;
+}
+.term-img-effect:after {
+    width: 150px;
+    height: 45px;
+    background-color: #000;
+    position: absolute;
+    content: "";
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+/* ---------------- */
+.who-speaking {
+    width: 100%;
+    height: 600px;
+    background-color: #FCFCFC;
+} 
+.term-img {
+    width: 25%;
+    float: left;
+}
+.term-img:hover .term-img-effect:after {
+    top:45px;
+}
+.term-img img {
+    width:100%;
+}   
+
+
+
+
+
+
+
+

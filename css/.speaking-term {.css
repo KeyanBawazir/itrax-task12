@@ -1,0 +1,57 @@
+.speaking-term {
+  
+}
+.term-img {
+    width: 25%;
+    float: left;
+    /* position: relative; */
+}
+.term-img-effect {
+    position: relative
+}
+.term-img-effect ::after {
+    content: "";
+    width:140px;
+    height: 45px;
+    background-color: gray;
+  
+    position: absolute;
+    /* transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%); */
+    top: 0px;
+    /* top:0; */
+    left:50%;
+    /* transition: transform 2s;
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    -ms-transition: transform 2s;
+    -o-transition: transform 2s; */
+}
+.term-img :hover .term-img-effect ::after{
+   
+}
+.term-img img {
+    width: 100%;
+} 
+
+
+
+
+/* .title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #171822;
+    margin-bottom: 10px;
+}
+.title p {
+    font-size: 18px;
+    color: #6a6b7c;
+    margin-bottom: 0;
+}
+.who-speaking .speakin-term {
+    width: 100%;
+    background-color: gray;
+} */
