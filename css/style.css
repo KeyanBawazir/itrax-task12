@@ -3,24 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* general styling */
-.term-img-effect {
-    position: relative;
-}
-.term-img-effect:after {
-    width: 150px;
-    height: 45px;
-    background-color: #000;
-    position: absolute;
-    content: "";
-    top: -45px;
-    left: 50%;
+/* public class */
+/* .translate-x {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-}
+} */
 /* ---------------- */
 .who-speaking {
     width: 100%;
@@ -30,12 +20,71 @@
 .term-img {
     width: 25%;
     float: left;
+    position: relative;
+    overflow: auto;
 }
-.term-img:hover .term-img-effect:after {
-    top:45px;
+.term-img-social-links {
+    width: 60%;
+    height: 15%;
+    background-color: rgb(240, 44, 44);
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: top .5s;
+    -webkit-transition: top .5s;
+    -moz-transition: top .5s;
+    -ms-transition: top .5s;
+    -o-transition: top .5s;
+}
+.term-img:hover  .term-img-social-links{
+    top: 0;
+} 
+.term-img:hover .person-desc {
+    /* left:125px; */
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.person-desc {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 20px;
+    /* left: -300px; */
+    left: -50%; 
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%); */
+    transition: left .5s;
+    -webkit-transition: left .5s;
+    -moz-transition: left .5s;
+    -ms-transition: left .5s;
+    -o-transition: left .5s;
+}
+.person-desc h5 {
+    font-size: 20px;
+    color: #171822;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.person-desc span {
+    font-size: 16px;
+    color: #f44949;
 }
 .term-img img {
-    width:100%;
+    width: 100%;
 }   
 
 
